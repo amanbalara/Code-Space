@@ -1,0 +1,33 @@
+# OS/System files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+npm-debug.log*
+
+# Node modules (in case you use npm later)
+node_modules/
+dist/
+
+# IDE/editor folders and files
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+
+# Environment files (if you use them)
+.env
+.env.*
+
+# macOS & Linux backup files
+*~
+*.swp
+*.bak
+
+# GitHub Pages build artifacts (if using Jekyll)
+_site/
+.sass-cache/
+
+# Ignore build tools output
+*.cache
