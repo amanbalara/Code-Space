@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Java for Beginners by Aman Balara</title>
+  <style>
+    :root {
+      --bg: #f9f9f9;
+      --text: #333;
+      --card: #fff;
+      --link: #007acc;
+    }
+    [data-theme="dark"] {
+      --bg: #1e1e1e;
+      --text: #eee;
+      --card: #2b2b2b;
+      --link: #66aaff;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      padding: 40px;
+      line-height: 1.6;
+      transition: background 0.3s, color 0.3s;
+    }
+    .section {
+      background: var(--card);
+      border-radius: 10px;
+      padding: 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    }
+    h1, h2, h3, h4 { color: var(--text); }
+    a {
+      color: var(--link);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    ul { padding-left: 20px; }
+    .tabs { margin-top: 10px; }
+    .tab-btn {
+      background: #ddd;
+      border: none;
+      padding: 10px 15px;
+      margin-right: 5px;
+      cursor: pointer;
+      border-radius: 5px 5px 0 0;
+      font-weight: bold;
+    }
+    .tab-btn.active {
+      background: var(--link);
+      color: white;
+    }
+    .tab-content {
+      display: none;
+      border-top: 2px solid var(--link);
+      padding: 10px 0;
+    }
+    .tab-content.active {
+      display: block;
+    }
+    .download-btn {
+      background: var(--link);
+      color: white;
+      padding: 8px 14px;
+      text-decoration: none;
+      border-radius: 6px;
+      margin-top: 10px;
+      display: inline-block;
+    }
+    .theme-toggle {
+      position: fixed;
+      top: 20px;
+      right: 30px;
+      cursor: pointer;
+      padding: 8px 14px;
+      background: var(--link);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      z-index: 999;
+    }
+    pre {
+      background: #eee;
+      padding: 10px;
+      border-radius: 6px;
+      overflow-x: auto;
+    }
+    code {
+      font-family: monospace;
+      color: #d63384;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 10px;
+    }
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px 12px;
+      text-align: left;
+    }
+    thead {
+      background-color: #f0f0f0;
+    }
+    [data-theme="dark"] thead {
+      background-color: #333;
+    }
+  </style>
+</head>
+<body data-theme="light">
+
+  <button class="theme-toggle" onclick="toggleTheme()">🌗 Toggle Theme</button>
+
+  <div class="section">
+    <h1>👋 Java for Beginners 🚀</h1>
+    <p>Welcome to <strong>Java for Beginners</strong> – a simple and practical guide to help you start your journey with Java programming! Whether you're brand new to coding or just new to Java, this repo is made for you. ☕</p>
+    <p><strong>Created and maintained by Aman Balara 🙌</strong></p>
+  </div>
+
+  <div class="section">
+    <h2>📚 What You'll Learn</h2>
+    <ul>
+      <li>✅ Java Basics (variables, data types, operators)</li>
+      <li>✅ Control Structures (if, switch, loops)</li>
+      <li>✅ Object-Oriented Programming (classes, objects, inheritance, etc.)</li>
+      <li>✅ Working with arrays and collections</li>
+      <li>✅ Basic file handling</li>
+      <li>✅ Simple projects and exercises</li>
+    </ul>
+  </div>
+
+  <div class="section">
+    <h2>🪨 Rock, 📄 Paper and ✂️ Scissors Game</h2>
+    <p>A simple Java console game where the user plays Rock-Paper-Scissors against the computer.</p>
+    <div class="tabs">
+      <button class="tab-btn active" onclick="switchTab(this, 'rps-view')">🔍 View Code</button>
+      <button class="tab-btn" onclick="switchTab(this, 'rps-run')">▶️ Run Code</button>
+    </div>
+    <div id="rps-view" class="tab-content active">
+      <a href="codes/RPS_Game.java" class="download-btn" download>⬇ Download Code</a>
+    </div>
+    <div id="rps-run" class="tab-content">
+      <div data-pym-src='https://www.jdoodle.com/embed/v1/fcc52ef72b996252'></div>
+      <script src='https://www.jdoodle.com/assets/jdoodle-pym.min.js' type='text/javascript'></script>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>📊 Percentage Calculator</h2>
+    <p>A Java program to calculate percentage of marks using basic math and user input.</p>
+    <div class="tabs">
+      <button class="tab-btn active" onclick="switchTab(this, 'percent-view')">🔍 View Code</button>
+      <button class="tab-btn" onclick="switchTab(this, 'percent-run')">▶️ Run Code</button>
+    </div>
+    <div id="percent-view" class="tab-content active">
+      <a href="codes/Exercise1.java" class="download-btn" download>⬇ Download Code</a>
+    </div>
+    <div id="percent-run" class="tab-content">
+      <div data-pym-src='https://www.jdoodle.com/embed/v1/af9a667c8caaa97'></div>
+      <script src='https://www.jdoodle.com/assets/jdoodle-pym.min.js' type='text/javascript'></script>
+    </div>
+  </div>
+  <div class="section" id="contributing-section">
+  <h2 style="cursor: pointer;" onclick="toggleContrib()">🙌 Contributing to Coding Space 🎉 <span id="contrib-arrow">▼</span></h2>
+  <div id="contrib-content" style="max-height: 0; overflow: hidden; transition: max-height 0.5s ease;">
+    <!-- your original content inside this collapsible div -->
+    <p>Thanks for your interest in contributing to <strong>Java for Beginners</strong>! 💻<br>
+    Whether you're new to coding or an experienced developer, your contributions are welcome and appreciated.</p>
+
+    <hr>
+
+    <h3>📌 How You Can Help</h3>
+    <ul>
+      <li>✏️ Fix typos or improve documentation</li>
+      <li>🧠 Add beginner-friendly examples</li>
+      <li>🧪 Improve or refactor existing code</li>
+      <li>💡 Suggest or add new Java topics</li>
+      <li>🐛 Report bugs via 
+        <a href="https://github.com/amanbalara/Java-for-Beginners/issues" target="_blank">Issues</a>
+      </li>
+    </ul>
+
+    <hr>
+
+    <h3>🛠 Getting Started</h3>
+    <ol>
+      <li><strong>Fork the repository</strong></li>
+      <li><strong>Clone your fork</strong></li>
+    </ol>
+    <pre><code>git clone https://github.com/YOUR-USERNAME/Java-for-Beginners.git</code></pre>
+  </div>
+</div>
+  <div class="section" id="security-section">
+  <h2 style="cursor: pointer;" onclick="toggleSecurity()">🛡 Security Policy <span id="security-arrow">▼</span></h2>
+  <div id="security-content" style="max-height: 0; overflow: hidden; transition: max-height 0.5s ease;">
+    <h3>✅ Supported Versions</h3>
+    <p>This project is actively maintained. Please report any security concerns related to the latest version.</p>
+    <table>
+      <thead>
+        <tr>
+          <th>Version</th>
+          <th>Supported</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Latest</td>
+          <td>✅</td>
+        </tr>
+        <tr>
+          <td>Older</td>
+          <td>❌</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <hr>
+
+    <h3>📢 Reporting a Vulnerability</h3>
+    <p>If you find a security vulnerability in this project:</p>
+    <ol>
+      <li><strong>Do NOT create a public issue.</strong></li>
+      <li>Report it privately by emailing us at: <code>mummy25796052@gmail.com</code></li>
+      <li>Include as much information as possible:
+        <ul>
+          <li>Description of the vulnerability</li>
+          <li>Steps to reproduce</li>
+          <li>Potential impact</li>
+          <li>Any suggested fix (if applicable)</li>
+        </ul>
+      </li>
+    </ol>
+
+    <hr>
+
+    <h3>🤝 Our Commitment</h3>
+    <ul>
+      <li>We'll respond to your report within <strong>5 working days</strong>.</li>
+      <li>Valid issues will be investigated and resolved within <strong>10–15 working days</strong>.</li>
+      <li>You will be credited (if you wish) once the issue is fixed.</li>
+    </ul>
+
+    <hr>
+
+    <h3>📌 Scope</h3>
+    <p>This security policy applies to:</p>
+    <ul>
+      <li>Vulnerabilities in the code (e.g., unsafe input handling, exposed tokens)</li>
+      <li>Insecure dependencies</li>
+      <li>Build or automation flaws</li>
+    </ul>
+    <p>This policy <strong>does not cover</strong>:</p>
+    <ul>
+      <li>General bugs, typos, or beginner mistakes</li>
+      <li>Issues caused by user misuse</li>
+    </ul>
+
+    <hr>
+
+    <h3>🤫 Responsible Disclosure</h3>
+    <ul>
+      <li>Avoid exploiting the vulnerability</li>
+      <li>Keep the issue confidential until resolved</li>
+      <li>Do not use the issue for personal gain</li>
+    </ul>
+
+    <p>Thank you for helping us keep <strong>Java for Beginners</strong> safe and secure! 🙌</p>
+  </div>
+</div>
+  <!-- ✅ UPDATED LICENSE SECTION -->
+  <div class="section" id="license-section">
+    <h2 style="cursor: pointer;" onclick="toggleLicense()">📃 License <span id="license-arrow">▼</span></h2>
+    <div id="license-content" style="max-height: 0; overflow: hidden; transition: max-height 0.5s ease;">
+      <pre><code>MIT License
+
+Copyright (c) 2025 Aman Balara
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.</code></pre>
+      <a href="license.txt" class="download-btn" download>⬇ Download License</a>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>✨ Stay Connected</h2>
+    <p>📧 <a href="mailto:mummy25796052@gmail.com">mummy25796052@gmail.com</a></p>
+    <p>🌐 <a href="https://github.com/amanbalara" target="_blank">github.com/amanbalara</a></p>
+    <p>📸 <a href="https://www.instagram.com/aman_balara" target="_blank">@aman_balara</a></p>
+  </div>
+
+  <div class="section" style="text-align: center;">
+    <h2>🙏 Thanks for visiting us!</h2>
+    <p>We hope you found this helpful. Happy coding! 💻✨</p>
+  </div>
+
+  <!-- JDoodle Script -->
+  <script src="https://www.jdoodle.com/assets/jdoodle-pym.min.js" type="text/javascript"></script>
+
+  <!-- JavaScript for Tabs and Theme Toggle -->
+  <script>
+  // 🔄 Tabs switching
+  function switchTab(btn, targetId) {
+    const container = btn.closest('.section');
+    container.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    container.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+    btn.classList.add('active');
+    container.querySelector(`#${targetId}`).classList.add('active');
+  }
+
+  // 🌗 Theme toggle
+  function toggleTheme() {
+    const body = document.body;
+    const theme = body.getAttribute("data-theme") === "dark" ? "light" : "dark";
+    body.setAttribute("data-theme", theme);
+  }
+
+  // 📃 License toggle
+  function toggleLicense() {
+    const content = document.getElementById("license-content");
+    const arrow = document.getElementById("license-arrow");
+    const section = document.getElementById("license-section");
+
+    if (content.style.maxHeight && content.style.maxHeight !== "0px") {
+      content.style.maxHeight = "0";
+      arrow.textContent = "▼";
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+      arrow.textContent = "▲";
+      setTimeout(() => {
+        section.scrollIntoView({ behavior: "smooth", block: "start" });
+      }, 200);
+    }
+  }
+
+  // 🙌 Contributing toggle
+  function toggleContrib() {
+    const content = document.getElementById("contrib-content");
+    const arrow = document.getElementById("contrib-arrow");
+    const section = document.getElementById("contributing-section");
+
+    if (content.style.maxHeight && content.style.maxHeight !== "0px") {
+      content.style.maxHeight = "0";
+      arrow.textContent = "▼";
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+      arrow.textContent = "▲";
+      setTimeout(() => {
+        section.scrollIntoView({ behavior: "smooth", block: "start" });
+      }, 200);
+    }
+  }
+
+  // 🛡 Security Policy toggle
+  function toggleSecurity() {
+    const content = document.getElementById("security-content");
+    const arrow = document.getElementById("security-arrow");
+    const section = document.getElementById("security-section");
+
+    if (content.style.maxHeight && content.style.maxHeight !== "0px") {
+      content.style.maxHeight = "0";
+      arrow.textContent = "▼";
+    } else {
+      content.style.maxHeight = content.scrollHeight + "px";
+      arrow.textContent = "▲";
+      setTimeout(() => {
+        section.scrollIntoView({ behavior: "smooth", block: "start" });
+      }, 200);
+    }
+  }
+</script>
+</body>
+</html>
