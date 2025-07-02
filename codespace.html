@@ -110,7 +110,25 @@
     [data-theme="dark"] thead {
       background-color: #333;
     }
-  </style>
+    .projects-button {
+  padding: 12px 25px;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.projects-button:hover {
+  background: linear-gradient(135deg, #5a67d8, #6b46c1);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.2);
+}
+</style>
 </head>
 <body data-theme="light">
 
@@ -133,40 +151,11 @@
       <li>✅ Simple projects and exercises</li>
     </ul>
   </div>
-
-  <div class="section">
-    <h2>🪨 Rock, 📄 Paper and ✂️ Scissors Game</h2>
-    <p>A simple Java console game where the user plays Rock-Paper-Scissors against the computer.</p>
-    <div class="tabs">
-      <button class="tab-btn active" onclick="switchTab(this, 'rps-view')">🔍 View Code</button>
-      <button class="tab-btn" onclick="switchTab(this, 'rps-run')">▶️ Run Code</button>
-    </div>
-    <div id="rps-view" class="tab-content active">
-      <a href="codes/RPS_Game.java" class="download-btn" download>⬇ Download Code</a>
-    </div>
-    <div id="rps-run" class="tab-content">
-      <div data-pym-src='https://www.jdoodle.com/embed/v1/fcc52ef72b996252'></div>
-      <script src='https://www.jdoodle.com/assets/jdoodle-pym.min.js' type='text/javascript'></script>
-    </div>
-  </div>
-
-  <div class="section">
-    <h2>📊 Percentage Calculator</h2>
-    <p>A Java program to calculate percentage of marks using basic math and user input.</p>
-    <div class="tabs">
-      <button class="tab-btn active" onclick="switchTab(this, 'percent-view')">🔍 View Code</button>
-      <button class="tab-btn" onclick="switchTab(this, 'percent-run')">▶️ Run Code</button>
-    </div>
-    <div id="percent-view" class="tab-content active">
-      <a href="codes/Exercise1.java" class="download-btn" download>⬇ Download Code</a>
-    </div>
-    <div id="percent-run" class="tab-content">
-      <div data-pym-src='https://www.jdoodle.com/embed/v1/af9a667c8caaa97'></div>
-      <script src='https://www.jdoodle.com/assets/jdoodle-pym.min.js' type='text/javascript'></script>
-    </div>
-  </div>
-  
-  <div class="section">
+  <button class="projects-button" onclick="location.href='projects.html'">
+  Projects
+</button>
+ 
+<div class="section">
     <h2>✨ Stay Connected</h2>
     <p>📧 <a href="mailto:mummy25796052@gmail.com">mummy25796052@gmail.com</a></p>
     <p>🌐 <a href="https://github.com/amanbalara" target="_blank">github.com/amanbalara</a></p>
