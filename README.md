@@ -40,38 +40,12 @@ Code Space is an interactive learning platform where **anyone** can:
 - ⚙️ **JavaScript**
 - 🧩 **JDoodle API** for embedded code execution
 - 🎇 Custom particle effects and animations
-
+  
 ---
 
-## 🌍 Live Demo
+## 🧑‍🚀 Created and Maintained By
 
-👉 [**Visit Code Space**](#) *(Add your link here)*
-
----
-
-## 📜 License
-
-This project is open-source under the **MIT License**.  
-See the [LICENSE](#) section in the app to learn more.
-
----
-
-## 🤝 Contributions Welcome!
-
-We love collaborating with others — especially **beginners who want to grow**.  
-Check out the [CONTRIBUTING](#) section to get started!
-
----
-
-## 🔐 Security
-
-If you spot a bug or vulnerability, please head over to the [SECURITY](#) section to report it.
-
----
-
-## 🧑‍🚀 Created By
-
-> **[Your Name / GitHub Handle]**  
+> **[Aman Balara]**  
 > Built to make tech learning fun, beautiful, and accessible for everyone.
 
 ---
