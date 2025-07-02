@@ -110,24 +110,22 @@
     [data-theme="dark"] thead {
       background-color: #333;
     }
-    .projects-button {
-  padding: 12px 25px;
-  background: linear-gradient(135deg, #667eea, #764ba2);
-  color: white;
-  border: none;
-  border-radius: 50px;
-  font-size: 1rem;
-  font-weight: 600;
-  cursor: pointer;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-}
+  .cool-button {
+    padding: 15px 30px;
+    font-size: 18px;
+    color: white;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
 
-.projects-button:hover {
-  background: linear-gradient(135deg, #5a67d8, #6b46c1);
-  transform: translateY(-2px);
-  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.2);
-}
+  .cool-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+  }
 </style>
 </head>
 <body data-theme="light">
@@ -151,8 +149,10 @@
       <li>✅ Simple projects and exercises</li>
     </ul>
   </div>
-  <button class="projects-button" onclick="location.href='projects.html'">
-  Projects
+  <body style="margin: 0; height: 100vh; display: flex; justify-content: center; align-items: center; background: linear-gradient(135deg, #1f1c2c, #928dab);">
+    
+  <button class="cool-button" onclick="location.href='projects.html'">
+  📁 Projects
 </button>
  
 <div class="section">
