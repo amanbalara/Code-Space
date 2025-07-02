@@ -110,23 +110,7 @@
     [data-theme="dark"] thead {
       background-color: #333;
     }
-  .cool-button {
-    padding: 15px 30px;
-    font-size: 18px;
-    color: white;
-    background: linear-gradient(135deg, #667eea, #764ba2);
-    border: none;
-    border-radius: 12px;
-    cursor: pointer;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-    transition: transform 0.2s, box-shadow 0.2s;
-  }
-
-  .cool-button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
-  }
-</style>
+  </style>
 </head>
 <body data-theme="light">
 
@@ -149,13 +133,40 @@
       <li>✅ Simple projects and exercises</li>
     </ul>
   </div>
-  <body style="margin: 0; height: 100vh; display: flex; justify-content: center; align-items: center; background: linear-gradient(135deg, #1f1c2c, #928dab);">
-    
-  <button class="cool-button" onclick="location.href='projects.html'">
-  📁 Projects
-</button>
- 
-<div class="section">
+
+  <div class="section">
+    <h2>🪨 Rock, 📄 Paper and ✂️ Scissors Game</h2>
+    <p>A simple Java console game where the user plays Rock-Paper-Scissors against the computer.</p>
+    <div class="tabs">
+      <button class="tab-btn active" onclick="switchTab(this, 'rps-view')">🔍 View Code</button>
+      <button class="tab-btn" onclick="switchTab(this, 'rps-run')">▶️ Run Code</button>
+    </div>
+    <div id="rps-view" class="tab-content active">
+      <a href="codes/RPS_Game.java" class="download-btn" download>⬇ Download Code</a>
+    </div>
+    <div id="rps-run" class="tab-content">
+      <div data-pym-src='https://www.jdoodle.com/embed/v1/fcc52ef72b996252'></div>
+      <script src='https://www.jdoodle.com/assets/jdoodle-pym.min.js' type='text/javascript'></script>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>📊 Percentage Calculator</h2>
+    <p>A Java program to calculate percentage of marks using basic math and user input.</p>
+    <div class="tabs">
+      <button class="tab-btn active" onclick="switchTab(this, 'percent-view')">🔍 View Code</button>
+      <button class="tab-btn" onclick="switchTab(this, 'percent-run')">▶️ Run Code</button>
+    </div>
+    <div id="percent-view" class="tab-content active">
+      <a href="codes/Exercise1.java" class="download-btn" download>⬇ Download Code</a>
+    </div>
+    <div id="percent-run" class="tab-content">
+      <div data-pym-src='https://www.jdoodle.com/embed/v1/af9a667c8caaa97'></div>
+      <script src='https://www.jdoodle.com/assets/jdoodle-pym.min.js' type='text/javascript'></script>
+    </div>
+  </div>
+  
+  <div class="section">
     <h2>✨ Stay Connected</h2>
     <p>📧 <a href="mailto:mummy25796052@gmail.com">mummy25796052@gmail.com</a></p>
     <p>🌐 <a href="https://github.com/amanbalara" target="_blank">github.com/amanbalara</a></p>
