@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Java Theme Blank Page</title>
+  <style>
+    :root {
+      --bg: #f9f9f9;
+      --text: #333;
+      --card: #fff;
+      --link: #007acc;
+    }
+    [data-theme="dark"] {
+      --bg: #1e1e1e;
+      --text: #eee;
+      --card: #2b2b2b;
+      --link: #66aaff;
+    }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      padding: 40px;
+      line-height: 1.6;
+      transition: background 0.3s, color 0.3s;
+    }
+    .section {
+      background: var(--card);
+      border-radius: 10px;
+      padding: 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+    }
+    a {
+      color: var(--link);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .theme-toggle {
+      position: fixed;
+      top: 20px;
+      right: 30px;
+      cursor: pointer;
+      padding: 8px 14px;
+      background: var(--link);
+      color: white;
+      border: none;
+      border-radius: 5px;
+      z-index: 999;
+    }
+  </style>
+</head>
+<body data-theme="light">
+
+  <button class="theme-toggle" onclick="toggleTheme()">🌗 Toggle Theme</button>
+
+  <!-- You can add content here -->
+  <div class="section">
+    <h2>Welcome!</h2>
+    <p>🚀 "Launch your Java skills with hands-on projects — build, break, learn, and grow as one!"</p>
+  </div>
+
+  <script>
+    function toggleTheme() {
+      const body = document.body;
+      const theme = body.getAttribute("data-theme") === "dark" ? "light" : "dark";
+      body.setAttribute("data-theme", theme);
+    }
+  </script>
+
+  <!-- Footer -->
+  <footer style="text-align: center; padding: 20px; background-color: #f1f1f1; margin-top: 40px; font-family: Arial, sans-serif; font-size: 14px;">
+    <hr style="margin-bottom: 10px; width: 80%;">
+    <p style="color: gray;">&copy; 2025 | Created and Maintained by <strong>Aman Balara</strong></p>
+  </footer>
+
+</body>
+</html>
