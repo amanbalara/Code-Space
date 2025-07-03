@@ -173,7 +173,28 @@
         height: 600px;
       }
     }
-  </style>
+  
+  /* ...your existing styles above */
+
+  .project-btn {
+    display: inline-block;
+    background-color: var(--link);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: background 0.3s ease, transform 0.2s ease;
+    margin-bottom: 20px;
+  }
+
+  .project-btn:hover {
+    background-color: #005fa3;
+    transform: scale(1.05);
+  }
+</style>
 </head>
 <body data-theme="light">
   <button class="theme-toggle" onclick="toggleTheme()">🌗 Toggle Theme</button>
@@ -201,6 +222,8 @@
     <div class="jdoodle-container">
       <div data-pym-src="https://www.jdoodle.com/embed/v1/9f87f51fb1918643"></div>
     </div>
+    
+ <a href="help.html" class="project-btn">🚀 Help to Run Code</a>
 
     <div class="help-section">
       <h2>💡 How to Use the Java Compiler</h2>
