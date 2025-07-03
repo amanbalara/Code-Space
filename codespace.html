@@ -175,6 +175,30 @@
       height: 600px;
     }
   }
+    /* Container to center the button */
+.button-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Projects button with strong visibility */
+.projects-btn {
+  background-color: #ff6b00; /* Bright orange for contrast */
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.projects-btn:hover {
+  background-color: #e65c00;
+  transform: scale(1.05);
+}
   </style>
 </head>
 <body data-theme="light">
@@ -199,6 +223,12 @@
     </ul>
   </div>
 
+  <!-- 🚀 Projects Button -->
+  <div class="button-container">
+    <button class="projects-btn" onclick="window.open('projects.html', '_blank')">🚀 View Projects</button>
+  </div>
+</div>
+  
   <div class="section">
     <h2>🪨 Rock, 📄 Paper and ✂️ Scissors Game</h2>
     <p>A simple Java console game where the user plays Rock-Paper-Scissors against the computer.</p>
