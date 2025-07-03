@@ -51,7 +51,26 @@
       border-radius: 5px;
       z-index: 999;
     }
-  </style>
+    .help-btn {
+  background: linear-gradient(135deg, #007acc, #005f99);
+  color: white;
+  border: none;
+  padding: 14px 28px;
+  font-size: 18px;
+  font-weight: 600;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  letter-spacing: 0.5px;
+}
+
+.help-btn:hover {
+  background: linear-gradient(135deg, #005f99, #003f66);
+  transform: translateY(-2px) scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+</style>
 </head>
 <body data-theme="light">
 
@@ -62,6 +81,10 @@
     <h2>Welcome!</h2>
     <p>🚀 "Launch your Java skills with hands-on projects — build, break, learn, and grow as one!"</p>
   </div>
+
+  <div class="button-container">
+  <button class="help-btn" onclick="window.open('help.html', '_blank')">❓ Want Help in Running Code?</button>
+</div>
 
   <div class="section">
     <h2>🪨 Rock, 📄 Paper and ✂️ Scissors Game</h2>
