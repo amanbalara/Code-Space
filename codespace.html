@@ -175,27 +175,7 @@
       height: 600px;
     }
   }
-    /* 🔽 Expandable Help Section Styles */
-.help-section {
-  display: none; /* Hidden initially */
-  margin-top: 10px;
-}
-
-.help-section.show {
-  display: block; /* Show when toggled */
-}
-
-.help-toggle {
-  background: var(--link);
-  color: white;
-  border: none;
-  padding: 10px 16px;
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 16px;
-}
- </style>
+  </style>
 </head>
 <body data-theme="light">
 
@@ -241,10 +221,8 @@
     <div data-pym-src="https://www.jdoodle.com/embed/v1/9f87f51fb1918643"></div>
   </div>
 
-  <!-- 🔽 Help Guide: Expandable Section -->
-<div class="help-wrapper">
-  <button class="help-toggle" onclick="toggleHelp()">📘 Show Help</button>
-  <div class="help-section" id="helpSection">
+  <!-- Help Guide -->
+  <div class="help-section">
     <h2>💡 How to Use the Java Compiler</h2>
     <p><strong>1. Write Java Code:</strong><br>
     You can type or paste your Java code into the editor on the left.</p>
@@ -253,10 +231,12 @@
     If your program uses <code>Scanner</code> to read input, enter your input values in the <strong>STDIN</strong> box below the code editor.</p>
 
     <p><em>Example:</em> This code takes two numbers as input:</p>
+
 <pre class="example-input">
 5
 10
 </pre>
+
     <p>This will produce the output:</p>
 <pre class="example-input">
 Sum: 15
@@ -271,6 +251,7 @@ Sum: 15
     <hr>
     <p style="font-size: 14px;">Need help? Contact support or check <a href="https://www.jdoodle.com/docs" target="_blank">JDoodle Docs</a>.</p>
   </div>
+
 </div>
 
 <!-- JDoodle Embed Script -->
@@ -315,7 +296,7 @@ Sum: 15
     container.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
     container.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
     btn.classList.add('active');
-    container.querySelector(`#${targetId}`).classList.add('active');
+    container.querySelector(#${targetId}).classList.add('active');
   }
 
   // 🌗 Theme toggle
@@ -324,13 +305,6 @@ Sum: 15
     const theme = body.getAttribute("data-theme") === "dark" ? "light" : "dark";
     body.setAttribute("data-theme", theme);
   }
-    // 🔽 JavaScript to toggle Help Guide visibility
-function toggleHelp() {
-  const help = document.getElementById('helpSection');
-  const btn = document.querySelector('.help-toggle');
-  help.classList.toggle('show');
-  btn.textContent = help.classList.contains('show') ? '❌ Hide Help' : '📘 Show Help';
-}
 </script>
   <!-- 🌟 Custom Footer -->
 <footer style="text-align: center; padding: 20px; background-color: #f1f1f1; margin-top: 40px; font-family: Arial, sans-serif; font-size: 14px;">
