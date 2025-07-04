@@ -153,6 +153,15 @@
 
 
   <script>
+    // 🔄 Tabs switching
+  function switchTab(btn, targetId) {
+    const container = btn.closest('.section');
+    container.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    container.querySelectorAll('.tab-content').forEach(c => c.classList.remove('active'));
+    btn.classList.add('active');
+    container.querySelector(#${targetId}).classList.add('active');
+  }
+
     function toggleTheme() {
       const body = document.body;
       const theme = body.getAttribute("data-theme") === "dark" ? "light" : "dark";
